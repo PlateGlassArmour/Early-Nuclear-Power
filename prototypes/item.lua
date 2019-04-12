@@ -182,7 +182,7 @@ data:extend (
     },
     energy_source =
     {
-      type = "void",
+      type = "electric",
       usage_priority = "primary-output"
     },
     power = "25kW",
