@@ -137,6 +137,36 @@ data:extend(
       time = 25
     },
     order = "c-k-d"
+  },
+  
+  {
+    type = "technology",
+    name = "RTG",
+    icon_size = 128,
+    icon = "__Early_Nuclear_Power__/graphics/icons/RTG-research.png",
+    effects =
+    {
+	  {
+        type = "unlock-recipe",
+        recipe = "RTG"
+      },
+	  {
+        type = "unlock-recipe",
+        recipe = "crude-plutonium-processing"
+      }
+    },
+    prerequisites = { "intermediate-nuclear-technology", "modular-armor" },
+    unit =
+    {
+      count = 150,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
+      },
+      time = 25
+    },
+    order = "c-k-d"
   }
   
 }

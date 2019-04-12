@@ -127,7 +127,7 @@ data:extend (
 					{
 					name = "turbine-smoke",
 					deviation = { 0.1, 0.1 },
-					frequency = 1,
+					frequency = 1.5,
 					position = { 0, 1.25 },
 					starting_vertical_speed = 0.06,
 					starting_frame = 0,
@@ -138,9 +138,55 @@ data:extend (
     energy_source =
     {
       type = "electric",
-      usage_priority = "primary-output"
+      usage_priority = "secondary-output"
     },
     power = "500kW",
+    categories = {"armor"}
+  },
+  
+  {
+    type = "item",
+    name = "plutonium",
+    icon = "__Early_Nuclear_Power__/graphics/icons/plutonium.png",
+    icon_size = 32,
+    subgroup = "intermediate-product",
+    order = "r[uranium-235]",
+    stack_size = 100
+  },
+  
+  {
+    type = "item",
+    name = "RTG-equipment",
+    icon = "__Early_Nuclear_Power__/graphics/icons/RTG.png",
+    icon_size = 32,
+    placed_as_equipment_result = "RTG-equipment",
+    subgroup = "equipment",
+    order = "a[energy-source]-a[solar-panel]",
+    stack_size = 20
+  },
+  
+  {
+    type = "generator-equipment",
+    name = "RTG-equipment",
+    sprite =
+    {
+      filename = "__Early_Nuclear_Power__/graphics/entity/RTG.png",
+      width = 32,
+      height = 32,
+      priority = "medium"
+    },
+    shape =
+    {
+      width = 1,
+      height = 1,
+      type = "full"
+    },
+    energy_source =
+    {
+      type = "void",
+      usage_priority = "primary-output"
+    },
+    power = "25kW",
     categories = {"armor"}
   }
   

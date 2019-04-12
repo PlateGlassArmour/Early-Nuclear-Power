@@ -132,7 +132,7 @@ data:extend(
     {
       {"processing-unit", 10},
       {"explosives", 10},
-      {"uranium-235", 3}
+      {"plutonium", 10}
     },
     result = "dirty-bomb"
   },
@@ -149,6 +149,40 @@ data:extend(
 	  {"steel-plate", 50}
     },
     result = "portable-breeder-reactor-equipment"
+  },
+  
+  {
+    type = "recipe",
+    name = "RTG",
+    enabled = false,
+    energy_required = 10,
+    ingredients =
+    {
+      {"electronic-circuit", 20},
+      {"plutonium", 10},
+	  {"steel-plate", 5}
+    },
+    result = "RTG-equipment"
+  },
+  
+  {
+    type = "recipe",
+    name = "crude-plutonium-processing",
+    energy_required = 100,
+    enabled = false,
+    category = "crude-centrifuging",
+    ingredients = {{"uranium-238", 20}},
+    icon = "__Early_Nuclear_Power__/graphics/icons/plutonium.png",
+    icon_size = 32,
+    subgroup = "raw-material",
+    order = "jy", -- k ordering so it shows up after explosives which is j ordering
+    results = 
+	{
+	  {
+        name = "plutonium",
+        amount = 1
+      }
+	}  
   }
   
 }
