@@ -119,7 +119,6 @@ data:extend (
 			{
 			fuel_category = "breeder-nuclear",
 			effectivity = 0.1,
-			emissions = 0.01,
 			fuel_inventory_size = 1,
 			burnt_inventory_size = 1,
 				smoke =
