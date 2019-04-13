@@ -169,7 +169,7 @@ data:extend (
     name = "RTG-equipment",
     sprite =
     {
-      filename = "__Early_Nuclear_Power__/graphics/entity/RTG.png",
+      filename = "__Early_Nuclear_Power__/graphics/icons/RTG.png",
       width = 32,
       height = 32,
       priority = "medium"

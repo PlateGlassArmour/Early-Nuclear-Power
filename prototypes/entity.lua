@@ -1209,7 +1209,7 @@ data:extend (
     {
       type = "electric",
       usage_priority = "secondary-input",
-      emissions_per_second_per_watt = 5 / 350000
+      emissions_per_minute = 6
     },
     energy_usage = "400kW",
     module_specification =
