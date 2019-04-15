@@ -167,6 +167,32 @@ data:extend(
       time = 25
     },
     order = "c-k-d"
+  },
+  
+  {
+    type = "technology",
+    name = "nuclear-fuel",
+    icon_size = 128,
+    icon = "__Early_Nuclear_Power__/graphics/icons/nuclear-fuel.png",
+    effects =
+    {
+	  {
+        type = "unlock-recipe",
+        recipe = "plutonium-nuclear-fuel"
+      }
+    },
+    prerequisites = { "intermediate-nuclear-technology", "rocket-fuel" },
+    unit =
+    {
+      count = 150,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1}
+      },
+      time = 30
+    },
+    order = "c-k-d"
   }
   
 }

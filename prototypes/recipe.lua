@@ -176,13 +176,25 @@ data:extend(
     icon_size = 32,
     subgroup = "raw-material",
     order = "jy", -- k ordering so it shows up after explosives which is j ordering
-    results = 
-	{
-	  {
+    results =
+    {
+      {
         name = "plutonium",
         amount = 1
       }
-	}  
+	}
+  },
+  
+  {
+    type = "recipe",
+    name = "plutonium-nuclear-fuel",
+    energy_required = 100,
+    enabled = false,
+    category = "crude-centrifuging",
+    ingredients = {{"plutonium", 1}, {"rocket-fuel", 1}},
+    icon = "__base__/graphics/icons/nuclear-fuel.png",
+    icon_size = 32,
+    result = "nuclear-fuel"
   }
   
 }
