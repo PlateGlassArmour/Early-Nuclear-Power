@@ -127,14 +127,29 @@ data:extend(
     type = "recipe",
     name = "dirty-bomb",
     enabled = false,
-    energy_required = 20,
+    energy_required = 10,
+    ingredients =
+    {
+      {"explosive-rocket", 1},
+      {"explosives", 1},
+	  {"electronic-circuit", 1},
+      {"plutonium", 1}
+    },
+    result = "dirty-bomb"
+  },
+  
+  {
+    type = "recipe",
+    name = "mini-nuke",
+    enabled = false,
+    energy_required = 30,
     ingredients =
     {
       {"processing-unit", 10},
       {"explosives", 10},
       {"plutonium", 10}
     },
-    result = "dirty-bomb"
+    result = "mini-nuke"
   },
   
   {

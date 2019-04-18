@@ -60,7 +60,7 @@ data:extend(
     type = "technology",
     name = "dirty-bomb",
     icon_size = 128,
-    icon = "__base__/graphics/technology/atomic-bomb.png",
+    icon = "__Early_Nuclear_Power__/graphics/icons/dirty-bomb-research.png",
     effects =
     {
 	  {
@@ -68,7 +68,35 @@ data:extend(
         recipe = "dirty-bomb"
       }
     },
-    prerequisites = { "crude-enrichment", "rocketry", "military-3" },
+    prerequisites = { "intermediate-nuclear-technology", "explosive-rocketry" },
+    unit =
+    {
+      count = 100,
+      ingredients =
+      {
+        {"automation-science-pack", 1},
+        {"logistic-science-pack", 1},
+		{"chemical-science-pack", 1},
+		{"military-science-pack", 1}
+      },
+      time = 30
+    },
+    order = "c-k-d"
+  },
+  
+  {
+    type = "technology",
+    name = "mini-nuke",
+    icon_size = 128,
+    icon = "__Early_Nuclear_Power__/graphics/icons/mini-nuke-research.png",
+    effects =
+    {
+	  {
+        type = "unlock-recipe",
+        recipe = "mini-nuke"
+      }
+    },
+    prerequisites = { "crude-enrichment", "dirty-bomb" },
     unit =
     {
       count = 1000,
@@ -80,7 +108,7 @@ data:extend(
 		{"military-science-pack", 1},
 		{"production-science-pack", 1}
       },
-      time = 30
+      time = 40
     },
     order = "c-k-d"
   },
@@ -149,10 +177,6 @@ data:extend(
 	  {
         type = "unlock-recipe",
         recipe = "RTG"
-      },
-	  {
-        type = "unlock-recipe",
-        recipe = "crude-plutonium-processing"
       }
     },
     prerequisites = { "intermediate-nuclear-technology", "modular-armor" },

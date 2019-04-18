@@ -19,4 +19,4 @@ data.raw["assembling-machine"]["centrifuge"]["fast_replaceable_group"] = "centri
 data.raw["technology"]["uranium-processing"]["prerequisites"] = {"chemical-science-pack", "concrete", "sulfur-processing", "crude-uranium-processing"}
 data.raw["technology"]["nuclear-power"]["prerequisites"] = {"uranium-processing", "intermediate-nuclear-technology"}
 data.raw["technology"]["kovarex-enrichment-process"]["prerequisites"] = { "production-science-pack", "uranium-processing", "rocket-fuel", "crude-enrichment"}
-data.raw["technology"]["atomic-bomb"]["prerequisites"] = {"military-4", "kovarex-enrichment-process", "rocket-control-unit", "rocketry", "dirty-bomb"}
+data.raw["technology"]["atomic-bomb"]["prerequisites"] = {"military-4", "kovarex-enrichment-process", "rocket-control-unit", "rocketry", "mini-nuke"}

@@ -59,7 +59,39 @@ data:extend (
   {
     type = "ammo",
     name = "dirty-bomb",
-    icon = "__base__/graphics/icons/atomic-bomb.png",
+    icon = "__Early_Nuclear_Power__/graphics/icons/dirty-bomb.png",
+    icon_size = 32,
+    ammo_type =
+    {
+      range_modifier = 2,
+      cooldown_modifier = 2,
+      target_type = "position",
+      category = "rocket",
+      action =
+      {
+        type = "direct",
+        action_delivery =
+        {
+          type = "projectile",
+          projectile = "dirty-bomb-rocket",
+          starting_speed = 0.08,
+          source_effects =
+          {
+            type = "create-entity",
+            entity_name = "explosion-hit"
+          }
+        }
+      }
+    },
+    subgroup = "ammo",
+    order = "d[rocket-launcher]-by",
+    stack_size = 100
+  },
+  
+  {
+    type = "ammo",
+    name = "mini-nuke",
+    icon = "__Early_Nuclear_Power__/graphics/icons/mini-nuke.png",
     icon_size = 32,
     ammo_type =
     {
@@ -73,8 +105,8 @@ data:extend (
         action_delivery =
         {
           type = "projectile",
-          projectile = "dirty-bomb-rocket",
-          starting_speed = 0.05,
+          projectile = "mini-nuke-rocket",
+          starting_speed = 0.07,
           source_effects =
           {
             type = "create-entity",
@@ -85,7 +117,7 @@ data:extend (
     },
     subgroup = "ammo",
     order = "d[rocket-launcher]-bz",
-    stack_size = 10
+    stack_size = 20
   },
   
   {
