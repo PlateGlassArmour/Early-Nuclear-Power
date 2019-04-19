@@ -4,7 +4,7 @@ data:extend (
  {
     type = "item",
     name = "crude-nuclear-reactor",
-    icon = "__base__/graphics/icons/nuclear-reactor.png",
+    icon = "__Early_Nuclear_Power__/graphics/icons/crude-nuclear-reactor.png",
     icon_size = 32,
     subgroup = "energy",
     order = "fAa",
@@ -15,7 +15,7 @@ data:extend (
    {
     type = "item",
     name = "breeder-nuclear-reactor",
-    icon = "__base__/graphics/icons/nuclear-reactor.png",
+    icon = "__Early_Nuclear_Power__/graphics/icons/breeder-reactor.png",
     icon_size = 32,
     subgroup = "energy",
     order = "fAb",
@@ -26,7 +26,7 @@ data:extend (
   {
     type = "item",
     name = "low-temp-heat-pipe",
-    icon = "__base__/graphics/icons/heat-pipe.png",
+    icon = "__Early_Nuclear_Power__/graphics/icons/low-temp-heat-pipe.png",
     icon_size = 32,
     subgroup = "energy",
     order = "f[nuclear-energy]-c[heat-pipe]",
@@ -37,7 +37,7 @@ data:extend (
   {
     type = "item",
     name = "low-temp-heat-exchanger",
-    icon = "__base__/graphics/icons/heat-boiler.png",
+    icon = "__Early_Nuclear_Power__/graphics/icons/low-temp-heat-exchanger.png",
     icon_size = 32,
     subgroup = "energy",
     order = "f[nuclear-energy]-b[heat-exchanger]",
@@ -48,7 +48,7 @@ data:extend (
   {
     type = "item",
     name = "crude-centrifuge",
-    icon = "__base__/graphics/icons/centrifuge.png",
+    icon = "__Early_Nuclear_Power__/graphics/icons/crude-centrifuge.png",
     icon_size = 32,
     subgroup = "production-machine",
     order = "fz",
