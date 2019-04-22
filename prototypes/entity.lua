@@ -699,7 +699,7 @@ data:extend (
 	fast_replaceable_group = "heat-exchanger",
     collision_box = {{-1.29, -0.79}, {1.29, 0.79}},
     selection_box = {{-1.5, -1}, {1.5, 1}},
-    target_temperature = 160,
+    target_temperature = 165,
     fluid_box =
     {
       base_area = 1,
@@ -734,7 +734,7 @@ data:extend (
       max_temperature = 500,
       specific_heat = "100KJ",
       max_transfer = "200MW",
-      min_working_temperature = 160,
+      min_working_temperature = 165,
       connections =
       {
         {

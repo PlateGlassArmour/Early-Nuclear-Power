@@ -186,7 +186,7 @@ data:extend(
     energy_required = 100,
     enabled = false,
     category = "crude-centrifuging",
-    ingredients = {{"uranium-238", 20}},
+    ingredients = {{"uranium-238", 1}},
     icon = "__Early_Nuclear_Power__/graphics/icons/plutonium.png",
     icon_size = 32,
     subgroup = "raw-material",
