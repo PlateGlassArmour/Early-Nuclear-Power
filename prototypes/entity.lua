@@ -27,9 +27,9 @@ data:extend (
     lower_layer_picture =
     {
       filename = "__base__/graphics/entity/nuclear-reactor/reactor-pipes.png",
-      width = 160,
-      height = 160,
-	  scale = 0.4,
+      width = 156,
+      height = 156,
+	    scale = 0.4,
       shift = { -0.03125, -0.1875 },
       hr_version =
       {
@@ -40,6 +40,22 @@ data:extend (
         shift = { -0.03125, -0.1875 }
       }
     },
+    heat_lower_layer_picture =
+    {
+      filename = "__base__/graphics/entity/nuclear-reactor/reactor-pipes-heated.png",
+      width = 156,
+      height = 156,
+	    scale = 0.4,
+      shift = util.by_pixel(-1.2, -1.6),
+      hr_version =
+      {
+        filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-pipes-heated.png",
+        width = 320,
+        height = 316,
+        scale = 0.2,
+        shift = util.by_pixel(-0.2, -1.8),
+      }
+    },
 
     picture =
     {
@@ -47,9 +63,9 @@ data:extend (
       {
         {
           filename = "__base__/graphics/entity/nuclear-reactor/reactor.png",
-          width = 160,
-          height = 160,
-		  scale = 0.4,
+          width = 154,
+          height = 158,
+		      scale = 0.4,
           shift = { -0.03125, -0.1875 },
           hr_version =
           {
@@ -64,7 +80,7 @@ data:extend (
           filename = "__base__/graphics/entity/nuclear-reactor/reactor-shadow.png",
           width = 263,
           height = 162,
-		  scale = 0.4,
+		      scale = 0.4,
           shift = { 1.625 , 0 },
           draw_as_shadow = true,
           hr_version =
@@ -85,7 +101,7 @@ data:extend (
       filename = "__base__/graphics/entity/nuclear-reactor/reactor-lights-color.png",
       width = 160,
       height = 160,
-	  scale = 0.4,
+	    scale = 0.4,
       shift = { -0.03125, -0.1875 },
       blend_mode = "additive",
       hr_version =
@@ -140,6 +156,33 @@ data:extend (
           position = {-0.5, -0.5},
           direction = defines.direction.west
         }
+      },
+
+    heat_picture =
+      {
+        filename = "__base__/graphics/entity/nuclear-reactor/reactor-heated.png",
+        width = 108,
+        height = 128,
+        scale = 0.4,
+        shift = util.by_pixel(0.4, -2.8),
+        hr_version =
+        {
+          filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-heated.png",
+          width = 216,
+          height = 256,
+          scale = 0.2,
+          shift = util.by_pixel(1.2, -2.6),
+        }
+      },
+      heat_glow =
+      {
+        filename = "__base__/graphics/entity/nuclear-reactor/reactor-heat-glow.png",
+        priority = "extra-high",
+        width = 188,
+        height = 190,
+        scale = 0.4,
+        tint = heat_glow_tint,
+        shift = util.by_pixel(-0.8, -1.6)
       }
     },
 
@@ -183,35 +226,45 @@ data:extend (
       }
     },
 
-    connection_patches =
+    heat_connection_patches_connected =
     {
-      north =
+      sheet =
       {
-        filename = "__base__/graphics/entity/nuclear-reactor/connection-patch-north.png",
-        width = 160,
-        height = 15,
-        shift = util.by_pixel(0, -72.5)
-      },
-      east =
+        filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches-heated.png",
+        width = 32,
+        height = 32,
+        scale = 0.4,
+        variation_count = 12,
+        hr_version =
+        {
+          filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-connect-patches-heated.png",
+          width = 64,
+          height = 64,
+          variation_count = 12,
+          scale = 0.2
+        }
+      }
+    },
+
+    heat_connection_patches_disconnected =
+    {
+      sheet =
       {
-        filename = "__base__/graphics/entity/nuclear-reactor/connection-patch-east.png",
-        width = 15,
-        height = 160,
-        shift = util.by_pixel(72.5, 0)
-      },
-      south =
-      {
-        filename = "__base__/graphics/entity/nuclear-reactor/connection-patch-south.png",
-        width = 160,
-        height = 15,
-        shift = util.by_pixel(0, 72.5)
-      },
-      west =
-      {
-        filename = "__base__/graphics/entity/nuclear-reactor/connection-patch-west.png",
-        width = 15,
-        height = 160,
-        shift = util.by_pixel(-72.5, 0)
+        filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches-heated.png",
+        width = 32,
+        height = 32,
+        scale = 0.4,
+        variation_count = 12,
+        y = 32,
+        hr_version =
+        {
+          filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-connect-patches-heated.png",
+          width = 64,
+          height = 64,
+          variation_count = 12,
+          y = 64,
+          scale = 0.2
+        }
       }
     },
 
@@ -301,8 +354,8 @@ data:extend (
     lower_layer_picture =
     {
       filename = "__base__/graphics/entity/nuclear-reactor/reactor-pipes.png",
-      width = 160,
-      height = 160,
+      width = 156,
+      height = 156,
       scale = 0.6,
       shift = { -0.03125, -0.1875 },
       hr_version =
@@ -314,6 +367,22 @@ data:extend (
         shift = { -0.03125, -0.1875 }
       }
     },
+    heat_lower_layer_picture =
+    {
+      filename = "__base__/graphics/entity/nuclear-reactor/reactor-pipes-heated.png",
+      width = 156,
+      height = 156,
+      scale = 0.6,
+      shift = util.by_pixel(-1.8, -2.4),
+      hr_version =
+      {
+        filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-pipes-heated.png",
+        width = 320,
+        height = 316,
+        scale = 0.3,
+        shift = util.by_pixel(-0.3, -2.7),
+      }
+    },
 
     picture =
     {
@@ -321,8 +390,8 @@ data:extend (
       {
         {
           filename = "__base__/graphics/entity/nuclear-reactor/reactor.png",
-          width = 160,
-          height = 160,
+          width = 154,
+          height = 158,
           scale = 0.6,
           shift = { -0.03125, -0.1875 },
           hr_version =
@@ -430,6 +499,33 @@ data:extend (
           position = {-1, -1},
           direction = defines.direction.west
         }
+      },
+
+    heat_picture =
+      {
+        filename = "__base__/graphics/entity/nuclear-reactor/reactor-heated.png",
+        width = 108,
+        height = 128,
+        scale = 0.6,
+        shift = util.by_pixel(0.6, -4.2),
+        hr_version =
+        {
+          filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-heated.png",
+          width = 216,
+          height = 256,
+          scale = 0.3,
+          shift = util.by_pixel(1.8, -3.9),
+        }
+      },
+      heat_glow =
+      {
+        filename = "__base__/graphics/entity/nuclear-reactor/reactor-heat-glow.png",
+        priority = "extra-high",
+        width = 188,
+        height = 190,
+        scale = 0.6,
+        tint = heat_glow_tint,
+        shift = util.by_pixel(-1.2, -2.4)
       }
     },
 
@@ -447,6 +543,7 @@ data:extend (
           width = 64,
           height = 64,
           variation_count = 12,
+          scale = 0.5
         }
       }
     },
@@ -467,39 +564,50 @@ data:extend (
           height = 64,
           variation_count = 12,
           y = 64,
+          scale = 0.5
         }
       }
     },
 
-    connection_patches =
+    heat_connection_patches_connected =
     {
-      north =
+      sheet =
       {
-        filename = "__base__/graphics/entity/nuclear-reactor/connection-patch-north.png",
-        width = 160,
-        height = 15,
-        shift = util.by_pixel(0, -72.5)
-      },
-      east =
+        filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches-heated.png",
+        width = 32,
+        height = 32,
+        scale = 0.6,
+        variation_count = 12,
+        hr_version =
+        {
+          filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-connect-patches-heated.png",
+          width = 64,
+          height = 64,
+          variation_count = 12,
+          scale = 0.3
+        }
+      }
+    },
+
+    heat_connection_patches_disconnected =
+    {
+      sheet =
       {
-        filename = "__base__/graphics/entity/nuclear-reactor/connection-patch-east.png",
-        width = 15,
-        height = 160,
-        shift = util.by_pixel(72.5, 0)
-      },
-      south =
-      {
-        filename = "__base__/graphics/entity/nuclear-reactor/connection-patch-south.png",
-        width = 160,
-        height = 15,
-        shift = util.by_pixel(0, 72.5)
-      },
-      west =
-      {
-        filename = "__base__/graphics/entity/nuclear-reactor/connection-patch-west.png",
-        width = 15,
-        height = 160,
-        shift = util.by_pixel(-72.5, 0)
+        filename = "__base__/graphics/entity/nuclear-reactor/reactor-connect-patches-heated.png",
+        width = 32,
+        height = 32,
+        scale = 0.6,
+        variation_count = 12,
+        y = 32,
+        hr_version =
+        {
+          filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-connect-patches-heated.png",
+          width = 64,
+          height = 64,
+          variation_count = 12,
+          y = 64,
+          scale = 0.3
+        }
       }
     },
 
@@ -591,13 +699,12 @@ data:extend (
 	fast_replaceable_group = "heat-pipe",
     collision_box = {{-0.3, -0.3}, {0.3, 0.3}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
-    minimum_glow_temperature = 350,
-    glow_alpha_modifier = 0.6,
     heat_buffer =
     {
       max_temperature = 500,
       specific_heat = "100KJ",
       max_transfer = "100MW",
+      minimum_glow_temperature = 350,
       connections =
       {
         {
@@ -616,6 +723,14 @@ data:extend (
           position = {0, 0},
           direction = defines.direction.west
         }
+      },
+      heat_glow =
+      {
+        filename = "__base__/graphics/entity/heat-pipe/heated-glow.png",
+        priority = "extra-high",
+        width = 55,
+        height = 55,
+        tint = heat_glow_tint
       }
     },
 
@@ -658,16 +773,6 @@ data:extend (
         ending_right = {},
         ending_left = {}
       }),
-
-    heat_glow_light =
-    {
-      --minimum_darkness = 0.3,
-      color = { r = 1, g = 155/255, b = 0.05, a = 0 },
-      --shift = {-0.6, 3.5},
-      size = 2.5,
-      intensity = 0.1,
-      --add_perspective = true
-    }
   },
   
   {
@@ -743,25 +848,145 @@ data:extend (
         }
       },
       pipe_covers =
-
         make_4way_animation_from_spritesheet(
         {
           filename = "__base__/graphics/entity/heat-exchanger/heatex-endings.png",
-          line_length = 4,
           width = 32,
           height = 32,
           direction_count = 4,
           hr_version =
           {
             filename = "__base__/graphics/entity/heat-exchanger/hr-heatex-endings.png",
-            line_length = 4,
             width = 64,
             height = 64,
             direction_count = 4,
             scale = 0.5
           }
-        })
-
+        }),
+      heat_pipe_covers =
+        make_4way_animation_from_spritesheet(
+        {
+          filename = "__base__/graphics/entity/heat-exchanger/heatex-endings-heated.png",
+          width = 32,
+          height = 32,
+          direction_count = 4,
+          hr_version =
+          {
+            filename = "__base__/graphics/entity/heat-exchanger/hr-heatex-endings-heated.png",
+            width = 64,
+            height = 64,
+            direction_count = 4,
+            scale = 0.5
+          }
+        }),
+      heat_picture =
+      {
+        north =
+        {
+          filename = "__base__/graphics/entity/heat-exchanger/heatex-N-heated.png",
+          priority = "extra-high",
+          width = 24,
+          height = 48,
+          shift = util.by_pixel(-1, 8),
+          hr_version =
+          {
+            filename = "__base__/graphics/entity/heat-exchanger/hr-heatex-N-heated.png",
+            priority = "extra-high",
+            width = 44,
+            height = 96,
+            shift = util.by_pixel(-0.5, 8.5),
+            scale = 0.5
+          }
+        },
+        east =
+        {
+          filename = "__base__/graphics/entity/heat-exchanger/heatex-E-heated.png",
+          priority = "extra-high",
+          width = 40,
+          height = 40,
+          shift = util.by_pixel(-21, -13),
+          hr_version =
+          {
+            filename = "__base__/graphics/entity/heat-exchanger/hr-heatex-E-heated.png",
+            priority = "extra-high",
+            width = 80,
+            height = 80,
+            shift = util.by_pixel(-21, -13),
+            scale = 0.5
+          }
+        },
+        south =
+        {
+          filename = "__base__/graphics/entity/heat-exchanger/heatex-S-heated.png",
+          priority = "extra-high",
+          width = 16,
+          height = 20,
+          shift = util.by_pixel(-1, -30),
+          hr_version =
+          {
+            filename = "__base__/graphics/entity/heat-exchanger/hr-heatex-S-heated.png",
+            priority = "extra-high",
+            width = 28,
+            height = 40,
+            shift = util.by_pixel(-1, -30),
+            scale = 0.5
+          }
+        },
+        west =
+        {
+          filename = "__base__/graphics/entity/heat-exchanger/heatex-W-heated.png",
+          priority = "extra-high",
+          width = 32,
+          height = 40,
+          shift = util.by_pixel(23, -13),
+          hr_version =
+          {
+            filename = "__base__/graphics/entity/heat-exchanger/hr-heatex-W-heated.png",
+            priority = "extra-high",
+            width = 64,
+            height = 76,
+            shift = util.by_pixel(23, -13),
+            scale = 0.5
+          }
+        },
+      },
+      heat_glow =
+      {
+        north =
+        {
+          filename = "__base__/graphics/entity/heat-exchanger/heatex-N-glow.png",
+          priority = "extra-high",
+          width = 38,
+          height = 70,
+          tint = heat_glow_tint,
+          shift = util.by_pixel(0, 8)
+        },
+        east =
+        {
+          filename = "__base__/graphics/entity/heat-exchanger/heatex-E-glow.png",
+          priority = "extra-high",
+          width = 60,
+          height = 62,
+          shift = util.by_pixel(-22, -12)
+        },
+        south =
+        {
+          filename = "__base__/graphics/entity/heat-exchanger/heatex-S-glow.png",
+          priority = "extra-high",
+          width = 38,
+          height = 40,
+          tint = heat_glow_tint,
+          shift = util.by_pixel(0, -36)
+        },
+        west =
+        {
+          filename = "__base__/graphics/entity/heat-exchanger/heatex-W-glow.png",
+          priority = "extra-high",
+          width = 60,
+          height = 64,
+          shift = util.by_pixel(20, -12)
+        },
+      }
     },
     working_sound =
     {
@@ -1271,6 +1496,5 @@ data:extend (
     },
     action_cooldown = 30
   }
- 
   }
   )
