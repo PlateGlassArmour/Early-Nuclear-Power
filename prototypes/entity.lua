@@ -35,7 +35,7 @@ data:extend (
       {
         filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-pipes.png",
         width = 320,
-        height = 320,
+        height = 316,
         scale = 0.2,
         shift = { -0.03125, -0.1875 }
       }
@@ -70,8 +70,8 @@ data:extend (
           hr_version =
           {
             filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor.png",
-            width = 320,
-            height = 320,
+            width = 302,
+            height = 318,
             scale = 0.2,
             shift = { -0.03125, -0.1875 }
           }
@@ -122,6 +122,8 @@ data:extend (
       max_temperature = 500,
       specific_heat = "2MJ",
       max_transfer = "1GW",
+      minimum_glow_temperature = 150,
+      glow_alpha_modifier = 0.4,
       connections =
       {
         {
@@ -362,7 +364,7 @@ data:extend (
       {
         filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor-pipes.png",
         width = 320,
-        height = 320,
+        height = 316,
         scale = 0.3,
         shift = { -0.03125, -0.1875 }
       }
@@ -397,8 +399,8 @@ data:extend (
           hr_version =
           {
             filename = "__base__/graphics/entity/nuclear-reactor/hr-reactor.png",
-            width = 320,
-            height = 320,
+            width = 302,
+            height = 318,
             scale = 0.3,
             shift = { -0.03125, -0.1875 }
           }
@@ -407,7 +409,7 @@ data:extend (
           filename = "__base__/graphics/entity/nuclear-reactor/reactor-shadow.png",
           width = 263,
           height = 162,
-		  scale = 0.6,
+		      scale = 0.6,
           shift = { 1.625 , 0 },
           draw_as_shadow = true,
           hr_version =
@@ -449,6 +451,8 @@ data:extend (
       max_temperature = 750,
       specific_heat = "6MJ",
       max_transfer = "5GW",
+      minimum_glow_temperature = 250,
+      glow_alpha_modifier = 0.5,
       connections =
       {
         {
