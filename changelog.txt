@@ -1,0 +1,72 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.4.5
+Date: 16. 10. 2019
+  Changes:
+    - Added official changelog
+---------------------------------------------------------------------------------------------------
+Version: 0.4.4
+Date: 16. 10. 2019
+  Bugfixes:
+    - Fixed HR resolution sprite sizes
+---------------------------------------------------------------------------------------------------
+Version: 0.4.3
+Date: 14. 10. 2019
+  Changes:
+    - Updated to new heat pipe format
+  Bugfixes:
+    - Updated sprites to new correct size
+---------------------------------------------------------------------------------------------------
+Version: 0.4.2
+Date: 22. 4. 2019
+  Changes:
+    - Changed the low temp equipment from 160 to 165 degrees
+    - Shrunk the thumbnail image (it was the largest file)
+---------------------------------------------------------------------------------------------------
+Version: 0.4.1
+Date: 18. 4. 2019
+  Changes:
+    - Updated all icons to unique graphics
+---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 18. 4. 2019
+  Major Features:
+    - Added Mini nuke
+  Changes:
+    - Updated missile icons to unique graphics
+    - Changed "poison capsule" effect to "radiation cloud"
+---------------------------------------------------------------------------------------------------
+Version: 0.3.0
+Date: 15. 4. 2019
+  Changes:
+    - Added new plutonium nuclear fuel recipe, so it is available earlier in the game. Old recipe is left unchanged
+---------------------------------------------------------------------------------------------------
+Version: 0.2.3
+Date: 13. 4. 2019
+  Changes:
+    - Updated pollution variables to emissions-per-minute
+    - Added base game technology dependency
+    - Changed RTG equipment icon to the same as the item icon
+---------------------------------------------------------------------------------------------------
+Version: 0.2.2
+Date: 12. 4. 2019
+  Bugfixes:
+    - Fixed a potential crash issue with RTGs
+---------------------------------------------------------------------------------------------------
+Version: 0.2.1
+Date: 11. 4. 2019
+  Changes:
+    - Updated pollution variables to emmissions-per-watt-per-second
+---------------------------------------------------------------------------------------------------
+Version: 0.2.0
+Date: 11. 4. 2019
+  Major Features:
+    - RTG added
+  Changes:
+    - Breeder reactor output changed to plutonium
+  Bugfixes:
+    - Minor naming issues fixed
+---------------------------------------------------------------------------------------------------
+Version: 0.1.0
+Date: 09. 4. 2019
+  Major Features:
+    - Crude nuclear and breeder reactors, as well as crude processing, portable breeder reactor, and dirty bomb
