@@ -74,7 +74,7 @@ data:extend(
     category = "crude-centrifuging",
     ingredients = {{"uranium-ore", 15}},
     icon = "__base__/graphics/icons/uranium-processing.png",
-    icon_size = 32,
+    icon_size = 64, icon_mipmaps = 4,
     subgroup = "raw-material",
     order = "jz", -- k ordering so it shows up after explosives which is j ordering
     results =
@@ -104,7 +104,7 @@ data:extend(
     category = "crude-centrifuging",
     ingredients = {{"uranium-235", 1}, {"uranium-238", 10}},
     icon = "__base__/graphics/icons/kovarex-enrichment-process.png",
-    icon_size = 32,
+    icon_size = 64, icon_mipmaps = 4,
     subgroup = "intermediate-product",
     order = "r[uranium-processing]-bz",
     main_product = "",
@@ -208,7 +208,7 @@ data:extend(
     category = "crude-centrifuging",
     ingredients = {{"plutonium", 1}, {"rocket-fuel", 1}},
     icon = "__base__/graphics/icons/nuclear-fuel.png",
-    icon_size = 32,
+    icon_size = 64, icon_mipmaps = 4,
     result = "nuclear-fuel"
   }
   

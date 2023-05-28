@@ -3,7 +3,7 @@ data:extend(
   {
     type = "technology",
     name = "intermediate-nuclear-technology",
-    icon_size = 128,
+    icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/nuclear-power.png",
     effects =
     {
@@ -29,7 +29,7 @@ data:extend(
   {
     type = "technology",
     name = "crude-uranium-processing",
-    icon_size = 128,
+    icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/uranium-processing.png",
     effects =
     {
@@ -116,7 +116,7 @@ data:extend(
   {
     type = "technology",
     name = "crude-enrichment",
-    icon_size = 128,
+    icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/kovarex-enrichment-process.png",
     effects =
     {
@@ -143,7 +143,7 @@ data:extend(
   {
     type = "technology",
     name = "portable-breeder-reactor",
-    icon_size = 128,
+    icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/nuclear-power.png",
     effects =
     {
